@@ -1,5 +1,5 @@
-led.enable(false)
 radio.setGroup(1)
+basic.showIcon(IconNames.Yes)
 basic.forever(function () {
     radio.sendValue("X", pins.analogReadPin(AnalogPin.P4))
     radio.sendValue("Y", pins.analogReadPin(AnalogPin.P3))
